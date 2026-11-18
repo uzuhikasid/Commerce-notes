@@ -24,9 +24,9 @@ The reader turns one chapter at a time inside a paper-style book frame, with cha
 1. **The Beginning** — Chapters 1–3
 2. **Getting to Know You** — Chapters 4–6
 3. **What You Became to Me** — Chapters 7–9, followed by Chapter 10, **“The Year I Got to Know You”**
-4. **A Birthday Message** — a separate reserved final part
+4. **A Birthday Message** — a separate closing page with the final birthday note
 
-The separate birthday-message page remains reserved for your own text. Chapter 9, **“Things I Hope You Know,”** remains in the book.
+Chapter 9, **“Things I Hope You Know,”** remains in the book. The final birthday message occupies its own page in Part 4.
 
 ## Preview locally
 

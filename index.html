@@ -683,6 +683,10 @@
   .chapter-copy p:last-child { margin-bottom: 0; }
   #stage-2 .pink-word { color: #925969; text-shadow: none; font-style: italic; }
   .chapter-endmark { color: #9b6b71; text-align: center; font: 16px/1 Georgia,serif; margin-top: 24px; }
+  #book-pages .book-part-section[data-book-part="4"] .book-part-heading { margin-bottom: 16px; }
+  #book-pages article[data-book-kind="birthday"] { padding-bottom: 16px; }
+  #book-pages article[data-book-kind="birthday"] .chapter-copy p:not(:last-child) { margin-bottom: 0.8em; }
+  #book-pages article[data-book-kind="birthday"] .chapter-endmark { margin-top: 14px; }
   .book-page-footer {
     flex: 0 0 auto;
     min-height: 36px;
@@ -771,6 +775,12 @@
     .chapter-paper { padding-bottom: 23px; }
     .chapter-title { font-size: clamp(27px,8vw,35px); }
     .chapter-copy { font-size: 14.6px; line-height: 1.76; }
+    #book-pages .book-part-section[data-book-part="4"] .book-part-heading { margin-bottom: 9px; }
+    #book-pages article[data-book-kind="birthday"] { padding-bottom: 10px; }
+    #book-pages article[data-book-kind="birthday"] .chapter-title { margin-bottom: 6px; }
+    #book-pages article[data-book-kind="birthday"] .chapter-copy { font-size: 14px; line-height: 1.55; }
+    #book-pages article[data-book-kind="birthday"] .chapter-copy p:not(:last-child) { margin-bottom: 0.62em; }
+    #book-pages article[data-book-kind="birthday"] .chapter-endmark { margin-top: 10px; }
     .book-page-footer { min-height: 30px; margin: 0 21px 0 31px; padding: 6px 0 7px; font-size: 7px; }
     .book-navigation { gap: 6px; }
     .book-navigation .pink-pill { min-width: 74px; padding: 8px 12px; }
@@ -1200,11 +1210,17 @@
           </section>
           <section class="book-part-section" data-book-part="4" data-part-title="A Birthday Message" aria-label="Part 4: A Birthday Message">
             <header class="book-part-heading"><span class="book-part-overline">Part 4</span><h3 class="book-part-title">A Birthday Message</h3></header>
-            <article class="chapter-paper book-reserved-page" data-book-page="10" data-book-part="4" data-book-kind="birthday" aria-labelledby="birthday-message-title">
+            <article class="chapter-paper" data-book-page="10" data-book-part="4" data-book-kind="birthday" aria-labelledby="birthday-message-title">
               <div class="chapter-meta">Closing page</div>
               <h3 class="chapter-title" id="birthday-message-title">A Birthday Message</h3>
               <div class="chapter-rule" aria-hidden="true"></div>
-              <p class="book-reserved-note">Space reserved for your birthday message.</p>
+              <div class="chapter-copy">
+                <p>And that's a little something from me for your day. ❤️</p>
+                <p>I really hope you enjoyed all of this, and that I managed to make your birthday even a little more special. You deserve so much more than just one day of being celebrated, and I hope you never forget that.</p>
+                <p>And well, this is just one birthday. We have so many more ahead of us, and I fully intend to make each one just as special, if not more.</p>
+                <p>Happy birthday once again, my love. Here's to many, many more. ❤️</p>
+              </div>
+              <div class="chapter-endmark" aria-hidden="true">✦</div>
             </article>
           </section>
               </div>
@@ -1232,7 +1248,7 @@
           <button class="book-toc-item" type="button" data-book-target="8" onclick="goBookPage(8)">Chapter 9 · Things I Hope You Know</button>
           <button class="book-toc-item" type="button" data-book-target="9" onclick="goBookPage(9)">Chapter 10 · The Year I Got to Know You</button>
           <div class="book-toc-part">Part 4 · A Birthday Message</div>
-          <button class="book-toc-item" type="button" data-book-target="10" onclick="goBookPage(10)">Birthday message · Reserved</button>
+          <button class="book-toc-item" type="button" data-book-target="10" onclick="goBookPage(10)">A Birthday Message</button>
         </nav>
       </main>
   </div>
